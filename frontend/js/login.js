@@ -1,4 +1,4 @@
-var domain = "http://localhost:10010";
+var domain = "http://abingcbc.cn:10010";
 
 login = () => {
     var username = document.getElementById("username").value;

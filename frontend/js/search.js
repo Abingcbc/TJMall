@@ -1,4 +1,4 @@
-var domain = "http://localhost:10010";
+var domain = "http://abingcbc.cn:10010";
 
 var gotoDetail = (product) => {
     var productId = product.getElementsByClassName("productId")[0].innerHTML;

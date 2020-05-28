@@ -12,12 +12,12 @@ import java.util.List;
 @Mapper
 public interface ProductMapper {
 
-    @Select("select * from product;")
+    @Select("select * from MallProduct;")
     List<Product> getAllProduct();
 
-    @Select("select * from product where productId = #{productId};")
+    @Select("select * from MallProduct where productId = #{productId};")
     Product getProductById(@Param("productId") int productId);
 
-    @Select("select * from product where product.name like #{keyword};")
+    @Select("select * from MallProduct where MallProduct.name like #{keyword};")
     List<Product> getProductByKeyword(@Param("keyword") String keyword);
 }

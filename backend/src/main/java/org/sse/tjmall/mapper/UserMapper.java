@@ -11,10 +11,10 @@ import org.sse.tjmall.dto.User;
 @Mapper
 public interface UserMapper {
 
-    @Select("select * from user where username = #{username}")
+    @Select("select * from MallUser where username = #{username}")
     User getUserByUsername(@Param("username") String username);
 
-    @Insert("insert into user(username, password)" +
+    @Insert("insert into MallUser(username, password)" +
             " values(#{username}, #{password});")
     int createNewUser(@Param("username") String username,
                       @Param("password") String password);
