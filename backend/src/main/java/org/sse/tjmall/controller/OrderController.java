@@ -27,8 +27,10 @@ public class OrderController {
     public void createNewOrder(@RequestBody Order order) {
         if (order.getNumber() != -1) {
             cartMapper.removeExistItemAll(order.getUsername(), order.getProductId());
+            orderMapper.createNewOrder(order.getUsername(), order.getProductId(), order.getNumber());
+        } else {
+            orderMapper.createNewOrder(order.getUsername(), order.getProductId(), 1);
         }
-        orderMapper.createNewOrder(order.getUsername(), order.getProductId(), order.getNumber());
     }
 
     @GetMapping("/order")

@@ -54,8 +54,8 @@ CREATE TABLE `MallOrder` (
 BEGIN;
 INSERT INTO `MallOrder` VALUES (1, '1', 1, 2, '2020-05-23 11:56:12');
 INSERT INTO `MallOrder` VALUES (2, '1', 1, 1, '2020-05-23 15:10:32');
-INSERT INTO `MallOrder` VALUES (3, '1', 1, -1, '2020-05-23 15:27:48');
-INSERT INTO `MallOrder` VALUES (4, '1', 3, -1, '2020-05-23 23:05:11');
+INSERT INTO `MallOrder` VALUES (3, '1', 1, 1, '2020-05-23 15:27:48');
+INSERT INTO `MallOrder` VALUES (4, '1', 3, 1, '2020-05-23 23:05:11');
 COMMIT;
 
 -- ----------------------------

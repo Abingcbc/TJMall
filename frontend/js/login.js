@@ -46,7 +46,7 @@ register = () => {
         // 请求已完成，且响应已就绪
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                window.location.href = "login";
+                window.location.href = "/login";
             } else {
                 alert("用户名已被使用！");
             }
